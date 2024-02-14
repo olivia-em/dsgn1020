@@ -3,7 +3,7 @@ body {
 }
 
 .basecardwrapper {
-    top: 5%;
+    top: 10vw;
     position: absolute;
     left: 42.5vw;
 }
@@ -17,82 +17,234 @@ body {
 }
 
 .cardwrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 50%;
-    gap: 5%;
-}
-
-#cardcenter {
-    height: 23vw;
-    width: 15vw;
-    background-color: darkblue;
-    border-radius: 10%;
-}
-
-#cardleft {
-    height: 23vw;
-    width: 15vw;
-    background-color: darkblue;
-    border-radius: 10%;
-}
-
-#cardright {
-    height: 23vw;
-    width: 15vw;
-    background-color: darkblue;
-    border-radius: 10%;
-}
-
-/* animation-name: card-spread-right;
-    animation-duration: 4s;
+    position:absolute;
+    left: 42.5vw;
+    top: 40vw;
+    animation-name: card-move;
+    animation-duration: 3s;
     animation-delay: 0s;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
 
-/* @keyframes card-spread-left {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-  }
-
-@keyframes card-spread-right {
-    0%   {background-color: red;}
-    100% {top:8px;left:50px; transform:rotate(15deg);background-color: red;}
-  } */
-
-  /* #cardwrapper {
+.card {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: rotate(60deg);
-  }
-  
-  .card {
-    width: 100px;
-    height: 150px;
-    background-color: grey;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    height: 23vw;
+    width: 15vw;
+    background-color: darkblue;
     border-radius: 10%;
-    border: 1px solid black; 
-    transform-origin: -30% 140%;
-    overflow: hidden;
-  }
-  
-  #card1 {
-    transform: rotate(0deg);
-  }
-  #card2 {
+    animation-name: card-spread;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#cardchange {
+    
+}
+
+#cardlove {
+    transform-origin: 50% 50%;
+    transform: rotate(-20deg);
+    left: -30vw;
+    top: 5vw;
+}
+
+#cardself {
+    transform-origin: 50% 50%;
     transform: rotate(20deg);
+    left: 30vw;
+    top: 5vw;
+}
+
+
+@keyframes card-move {
+    0%   {}
+    50%  {}
+    100% {top: 10vw;}
   }
-  #card3 {
-    transform: rotate(40deg);
+
+@keyframes card-spread {
+    0%   {}
+    50%  {transform: rotate(0deg);left: 0;top: 0;}
+    100% {transform: rotate(0deg);left: 0;top: 0;}
+  } 
+
+
+.cardwrapper-love {
+    position:absolute;
+    left: 42.5vw;
+    top: 40vw;
+}
+
+.cardlove {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    background-color: darkblue;
+    border-radius: 10%;
+}
+
+#cardlovers {
+    left: -30vw;
+    top: 10vw;
+    animation-name: lovers;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#cardhermit {
+    left: -30vw;
+    top: 35vw;
+    animation-name: hermit;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#cardempress {
+    left: -30vw;
+    top: 60vw;
+    animation-name: empress;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes lovers {
+    0%   {}
+    100% {transform-origin: 50% 50%;transform: rotate(-20deg);left: -30vw;top: 5vw;}
   }
-  
-  #cardwrapper:hover > .card {
-    transition: 1s ease-in;
-    transform: rotate(0deg);
-  } */
-  
+
+@keyframes hermit {
+    0%   {}
+    100% {left: 0vw;top: 0vw;}
+  } 
+
+@keyframes empress {
+    0%   {}
+    100% {transform-origin: 50% 50%;transform: rotate(20deg);left: 30vw;top: 5vw;}
+  } 
+
+.cardwrapper-self {
+    position:absolute;
+    left: 42.5vw;
+    top: 40vw;
+}
+
+.cardself {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    background-color: darkblue;
+    border-radius: 10%;
+}
+
+#carddevil {
+    left: -30vw;
+    top: 10vw;
+    animation-name: devil;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#cardhangedman {
+    left: -30vw;
+    top: 35vw;
+    animation-name: hangedman;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#cardtemperance {
+    left: -30vw;
+    top: 60vw;
+    animation-name: temperance;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes devil {
+    0%   {}
+    100% {transform-origin: 50% 50%;transform: rotate(-20deg);left: -30vw;top: 5vw;}
+  }
+
+@keyframes hangedman {
+    0%   {}
+    100% {left: 0vw;top: 0vw;}
+  } 
+
+@keyframes temperance {
+    0%   {}
+    100% {transform-origin: 50% 50%;transform: rotate(20deg);left: 30vw;top: 5vw;}
+  } 
+
+.cardwrapper-change {
+    position:absolute;
+    left: 42.5vw;
+    top: 40vw;
+}
+
+.cardchange {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    background-color: darkblue;
+    border-radius: 10%;
+}
+
+#cardtower {
+    left: -30vw;
+    top: 10vw;
+    animation-name: tower;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#cardwheel {
+    left: -30vw;
+    top: 35vw;
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#carddeath {
+    left: -30vw;
+    top: 60vw;
+    animation-name: death;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes tower {
+    0%   {}
+    100% {transform-origin: 50% 50%;transform: rotate(-20deg);left: -30vw;top: 5vw;}
+  }
+
+@keyframes wheel {
+    0%   {}
+    100% {left: 0vw;top: 0vw;}
+  } 
+
+@keyframes death {
+    0%   {}
+    100% {transform-origin: 50% 50%;transform: rotate(20deg);left: 30vw;top: 5vw;}
+  } 
