@@ -71,14 +71,39 @@ body {
     100% {transform: rotate(0deg);left: 0;top: 0;}
   } 
 
+/* START LOVE PAGE */
+
+.cardstyles {
+    /*  very important  */
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s;
+  }
 
 .cardwrapper-love {
     position:absolute;
     left: 42.5vw;
     top: 40vw;
+    transition: 1s;
+    /*  very important  */
+    transform-style: preserve-3d;
+    animation-name: love-flip;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    transform: perspective(200px) rotateY(180deg);
+    transform-origin: -24vw 0vw;
 }
 
-.cardlove {
+@keyframes love-flip {
+    0%   {}
+    25%  {transform: perspective(200px) rotateY(0deg);}
+    50%  {transform: perspective(200px) rotateY(0deg);}
+    100% {transform: perspective(200px) rotateY(0deg);}
+  } 
+
+.cardlove-back {
     position: absolute;
     height: 23vw;
     width: 15vw;
@@ -86,7 +111,17 @@ body {
     border-radius: 10%;
 }
 
-#cardlovers {
+.cardlove-front {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    background-color: darkgreen;
+    border-radius: 10%;
+    transform: rotateY(180deg);
+}
+  
+
+#cardlovers-back {
     left: -30vw;
     top: 10vw;
     animation-name: lovers;
@@ -96,7 +131,7 @@ body {
     animation-direction: reverse;
 }
 
-#cardhermit {
+#cardhermit-back {
     left: -30vw;
     top: 35vw;
     animation-name: hermit;
@@ -106,7 +141,7 @@ body {
     animation-direction: reverse;
 }
 
-#cardempress {
+#cardempress-back {
     left: -30vw;
     top: 60vw;
     animation-name: empress;
@@ -116,9 +151,24 @@ body {
     animation-direction: reverse;
 }
 
+#cardlovers-front {
+    left: -30vw;
+    top: 10vw;
+}
+
+#cardhermit-front {
+    left: -30vw;
+    top: 35vw;
+}
+
+#cardempress-front {
+    left: -30vw;
+    top: 60vw;
+}
+
 @keyframes lovers {
     0%   {}
-    100% {transform-origin: 50% 50%;transform: rotate(-20deg);left: -30vw;top: 5vw;}
+    100% {transform: rotate(-20deg);left: -30vw;top: 5vw;}
   }
 
 @keyframes hermit {
@@ -128,8 +178,10 @@ body {
 
 @keyframes empress {
     0%   {}
-    100% {transform-origin: 50% 50%;transform: rotate(20deg);left: 30vw;top: 5vw;}
+    100% {transform: rotate(20deg);left: 30vw;top: 5vw;}
   } 
+
+  /* END LOVE PAGE */
 
 .cardwrapper-self {
     position:absolute;
