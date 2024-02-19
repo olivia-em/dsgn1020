@@ -46,36 +46,36 @@ img {
     text-align: center;
     color: #FFF1D8;
     position: absolute;
-    font-size: 10px;
+    font-size: 11px;
     margin: 5px;
     margin-top: 20px;
     width: 70vw;
     left: 0vw;
-    top: 140px;
+    top: 170px;
 }
 
 .desc2 {
     text-align: center;
     color: #FFF1D8;
     position: absolute;
-    font-size: 10px;
+    font-size: 11px;
     margin: 5px;
     margin-top: 20px;
     width: 70vw;
     left: 0vw;
-    top: 320px;
+    top: 370px;
 }
 
 .desc3 {
     text-align: center;
     color: #FFF1D8;
     position: absolute;
-    font-size: 10px;
+    font-size: 11px;
     margin: 5px;
     margin-top: 20px;
     width: 70vw;
     left: 0vw;
-    top: 510px;
+    top: 550px;
 }
 
 .basecardwrapper {
