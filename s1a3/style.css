@@ -5,6 +5,38 @@ body {
     flex-direction: column;
 }
 
+main {
+    /* background-color: black; */
+    /* min-height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(241, 215, 215);
+}
+
+.grid {
+    /* background-color:white; */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 33%;
+    height: 50%;
+    flex-direction: row;
+}
+
+.sticker {
+    max-width: 75%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+
 footer {
     position: absolute;
     background-color: transparent;
