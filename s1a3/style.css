@@ -22,13 +22,13 @@ img {
     position: absolute;
     font-size: 11pt;
     margin: 5vw;
-    margin-top: 10vw;
+    margin-top: 5vw;
     width: 90vw;
 }
 
 .descwrapper {
     position: absolute;
-    left: -10vw;
+    left: -20vw;
 
 }
 
@@ -36,48 +36,48 @@ img {
     text-align: left;
     color: #FFF1D8;
     position: absolute;
-    font-size: 1.5vw;
-    margin: 2vw;
-    margin-top: 10vw;
-    width: 60vw;
+    font-size: 10px;
+    margin: 5px;
+    margin-top: 20px;
+    width: 70vw;
     left: 0vw;
-    top: 30vw;
+    top: 150px;
 }
 
 .desc2 {
     text-align: left;
     color: #FFF1D8;
     position: absolute;
-    font-size: 1.5vw;
-    margin: 2vw;
-    margin-top: 10vw;
-    width: 60vw;
+    font-size: 10px;
+    margin: 5px;
+    margin-top: 20px;
+    width: 70vw;
     left: 0vw;
-    top: 55vw;
+    top: 340px;
 }
 
 .desc3 {
     text-align: left;
     color: #FFF1D8;
     position: absolute;
-    font-size: 1.5vw;
-    margin: 2vw;
-    margin-top: 10vw;
-    width: 60vw;
+    font-size: 10px;
+    margin: 5px;
+    margin-top: 0px;
+    width: 70vw;
     left: 0vw;
-    top: 80vw;
+    top: 530px;
 }
 
 .basecardwrapper {
-    top: 35vh;
+    top: 225px;
     position: absolute;
-    left: 44vw;
+    left: 46%;
 }
 
 .basecard {
     position:absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     border-radius: 10%;
     background-color: #222222;
     opacity: 0.8;
@@ -89,8 +89,8 @@ img {
 
 .basecard-home {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     border-radius: 10%;
     background-color: #222222;
     opacity: 0.8;
@@ -101,16 +101,16 @@ img {
 }
 
 .button {
-    margin: 2vw;
-    margin-top: 8vw;
-    height: 3vw;
-    width: 8vw;
+    margin: auto;
+    margin-top: 50px;
+    height: 20px;
+    width: 60px;
     background-color:  #FFF1D8;
     padding: 0vw;
     border-radius: 5%;
     border: solid 1px #9C003D;
     color: #9C003D;
-    font-size: 2vw;
+    font-size: 1rem;
     text-align: center;
     animation: fade-in;
     animation-duration: 4s;
@@ -123,8 +123,8 @@ img {
 
 .cardwrapper {
     position:absolute;
-    /* left: ; */
-    top: 30vw;
+
+    top: 150px;
     animation-name: card-move;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -134,8 +134,8 @@ img {
 
 .card {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #222222;
     opacity: 0.8;
     background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
@@ -159,8 +159,8 @@ img {
 #cardlove {
     transform-origin: 50% 50%;
     transform: rotate(-20deg);
-    left: -30vw;
-    top: 5vw;
+    left: -125px;
+    top: 50px;
 }
 
 #cardlove:hover {
@@ -170,8 +170,8 @@ img {
 #cardself {
     transform-origin: 50% 50%;
     transform: rotate(20deg);
-    left: 30vw;
-    top: 5vw;
+    left: 125px;
+    top: 50px;
 }
 
 #cardself:hover {
@@ -204,7 +204,7 @@ img {
 @keyframes card-move {
     0%   {}
     50%  {}
-    100% {top: 0vw;}
+    100% {top: 0;}
   }
 
 @keyframes card-spread {
@@ -229,17 +229,17 @@ img {
 
 @keyframes left {
     0%   {}
-    100% {transform: rotate(-20deg);left: -30vw;top: 5vw;}
+    100% {transform: rotate(-20deg);left: -125px;top: 50px;}
   }
 
 @keyframes center {
     0%   {}
-    100% {left: 0vw;top: 0vw;}
+    100% {left: 0px;top: 0px;}
   } 
 
 @keyframes right {
     0%   {}
-    100% {transform: rotate(20deg);left: 30vw;top: 5vw;}
+    100% {transform: rotate(20deg);left: 125px;top: 50px;}
   } 
 
 
@@ -247,7 +247,7 @@ img {
 
 .cardwrapper-love {
     position:absolute;
-    top: 30vw;
+    top: 150px;
     transition: 1s;
     /*  very important  */
     transform-style: preserve-3d;
@@ -257,13 +257,13 @@ img {
     animation-iteration-count: 1;
     animation-direction: reverse;
     transform: perspective(200px) rotateY(180deg);
-    transform-origin: -24vw 0vw;
+    transform-origin: -35vw 0vw;
 }
 
 .cardlove-back {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #222222;
     opacity: 0.8;
     background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
@@ -275,8 +275,8 @@ img {
 
 .cardlove-front {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #FFF1D8;
     border-radius: 10%;
     transform: rotateY(180deg);
@@ -284,8 +284,8 @@ img {
   
 
 #cardlovers-back {
-    left: -30vw;
-    top: 10vw;
+    left: -40vw;
+    top: 10px;
     animation-name: left;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -294,8 +294,8 @@ img {
 }
 
 #cardhermit-back {
-    left: -30vw;
-    top: 35vw;
+    left: -40vw;
+    top: 200px;
     animation-name: center;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -304,8 +304,8 @@ img {
 }
 
 #cardempress-back {
-    left: -30vw;
-    top: 60vw;
+    left: -40vw;
+    top: 390px;
     animation-name: right;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -314,18 +314,18 @@ img {
 }
 
 #cardlovers-front {
-    left: -30vw;
-    top: 10vw;
+    left: -40vw;
+    top: 10px;
 }
 
 #cardhermit-front {
-    left: -30vw;
-    top: 35vw;
+    left: -40vw;
+    top: 200px;
 }
 
 #cardempress-front {
-    left: -30vw;
-    top: 60vw;
+    left: -40vw;
+    top: 390px;
 }
 
   /* END LOVE PAGE */
@@ -334,7 +334,7 @@ img {
 
 .cardwrapper-self {
     position:absolute;
-    top: 30vw;
+    top: 150px;
     transition: 1s;
     /*  very important  */
     transform-style: preserve-3d;
@@ -344,13 +344,13 @@ img {
     animation-iteration-count: 1;
     animation-direction: reverse;
     transform: perspective(200px) rotateY(180deg);
-    transform-origin: -24vw 0vw;
+    transform-origin: -35vw 0vw;
 }
 
 .cardself-back {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #222222;
     opacity: 0.8;
     background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
@@ -362,8 +362,8 @@ img {
 
 .cardself-front {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #FFF1D8;
     border-radius: 10%;
     transform: rotateY(180deg);
@@ -371,8 +371,8 @@ img {
   
 
 #carddevil-back {
-    left: -30vw;
-    top: 10vw;
+    left: -40vw;
+    top: 10px;
     animation-name: left;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -381,8 +381,8 @@ img {
 }
 
 #cardhangedman-back {
-    left: -30vw;
-    top: 35vw;
+    left: -40vw;
+    top: 200px;
     animation-name: center;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -391,8 +391,8 @@ img {
 }
 
 #cardtemperance-back {
-    left: -30vw;
-    top: 60vw;
+    left: -40vw;
+    top: 390px;
     animation-name: right;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -401,18 +401,18 @@ img {
 }
 
 #carddevil-front {
-    left: -30vw;
-    top: 10vw;
+    left: -40vw;
+    top: 10px;
 }
 
 #cardhangedman-front {
-    left: -30vw;
-    top: 35vw;
+    left: -40vw;
+    top: 200px;
 }
 
 #cardtemperance-front {
-    left: -30vw;
-    top: 60vw;
+    left: -40vw;
+    top: 390px;
 }
 
   /* END SELF PAGE */
@@ -421,7 +421,7 @@ img {
 
 .cardwrapper-change {
     position:absolute;
-    top: 30vw;
+    top: 150px;
     transition: 1s;
     /*  very important  */
     transform-style: preserve-3d;
@@ -431,13 +431,13 @@ img {
     animation-iteration-count: 1;
     animation-direction: reverse;
     transform: perspective(200px) rotateY(180deg);
-    transform-origin: -24vw 0vw;
+    transform-origin: -35vw 0vw;
 }
 
 .cardchange-back {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #222222;
     opacity: 0.8;
     background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
@@ -449,8 +449,8 @@ img {
 
 .cardchange-front {
     position: absolute;
-    height: 20vw;
-    width: 12vw;
+    height: 125px;
+    width: 75px;
     background-color: #FFF1D8;
     border-radius: 10%;
     transform: rotateY(180deg);
@@ -458,8 +458,8 @@ img {
   
 
 #cardtower-back {
-    left: -30vw;
-    top: 10vw;
+    left: -40vw;
+    top: 10px;
     animation-name: left;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -468,8 +468,8 @@ img {
 }
 
 #cardwheel-back {
-    left: -30vw;
-    top: 35vw;
+    left: -40vw;
+    top: 200px;
     animation-name: center;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -478,8 +478,8 @@ img {
 }
 
 #carddeath-back {
-    left: -30vw;
-    top: 60vw;
+    left: -40vw;
+    top: 390px;
     animation-name: right;
     animation-duration: 2s;
     animation-delay: 0s;
@@ -488,18 +488,18 @@ img {
 }
 
 #cardtower-front {
-    left: -30vw;
-    top: 10vw;
+    left: -40vw;
+    top: 10px;
 }
 
 #cardwheel-front {
-    left: -30vw;
-    top: 35vw;
+    left: -40vw;
+    top: 200px;
 }
 
 #carddeath-front {
-    left: -30vw;
-    top: 60vw;
+    left: -40vw;
+    top: 390px;
 }
 
   /* END CHANGES PAGE */
