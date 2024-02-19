@@ -32,7 +32,6 @@ img {
     position: absolute;
     font-size: 11pt;
     margin: auto;
-    margin-left: -20px;
     margin-top: 50px;
     width: 100%;
 }
@@ -82,7 +81,7 @@ img {
 .basecardwrapper {
     top: 225px;
     position: absolute;
-    left: 45%;
+    left: 47%;
 }
 
 .basecard {
