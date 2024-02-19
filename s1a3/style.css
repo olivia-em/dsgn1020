@@ -1,9 +1,31 @@
 body {
-    background-color: #9C003D;
+    background-color: #5B4343;
+}
+
+.lugrasimo-regular {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.lugrasimo-regular-bg {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.opener {
+    text-align: center;
+    color: #FFF1D8;
+    position: absolute;
+    font-size: 11pt;
+    margin: 5vw;
+    margin-top: 10vw;
+    width: 90vw;
 }
 
 .basecardwrapper {
-    top: 10vw;
+    top: 35vh;
     position: absolute;
     left: 42.5vw;
 }
@@ -12,16 +34,55 @@ body {
     position:absolute;
     height: 23vw;
     width: 15vw;
-    background-color: darkblue;
     border-radius: 10%;
+    background-color: #222222;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
 }
+
+.basecard-home {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    border-radius: 10%;
+    background-color: #222222;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+
+.button {
+    margin: 2vw;
+    margin-top: 8vw;
+    height: 4vw;
+    width: 11vw;
+    background-color:  #FFF1D8;
+    padding: 0vw;
+    border-radius: 5%;
+    border: solid 1px #9C003D;
+    color: #9C003D;
+    font-size: 3vw;
+    text-align: center;
+    animation: fade-in;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+.basecard-home:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 .cardwrapper {
     position:absolute;
-    left: 42.5vw;
-    top: 40vw;
+    /* left: ; */
+    top: 30vw;
     animation-name: card-move;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
@@ -31,18 +92,25 @@ body {
     position: absolute;
     height: 23vw;
     width: 15vw;
-    background-color: darkblue;
+    background-color: #222222;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
     border-radius: 10%;
     animation-name: card-spread;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-#cardchange {
-    
-}
+#cardchange {}
+
+#cardchange:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 #cardlove {
     transform-origin: 50% 50%;
@@ -51,6 +119,10 @@ body {
     top: 5vw;
 }
 
+#cardlove:hover {
+    transform: scale(1.2)rotate(-20deg); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
 #cardself {
     transform-origin: 50% 50%;
     transform: rotate(20deg);
@@ -58,11 +130,37 @@ body {
     top: 5vw;
 }
 
+#cardself:hover {
+    transform: scale(1.2)rotate(20deg); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+@keyframes fade-in {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+.fade-in {
+    animation: fade-in;
+    animation-duration: 4s;
+    animation-direction: reverse;
+  }
+
+@keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .fade-out {
+    animation: fade-out;
+    animation-duration: 2s;
+    opacity: 0;
+  }
 
 @keyframes card-move {
     0%   {}
     50%  {}
-    100% {top: 10vw;}
+    100% {top: 0vw;}
   }
 
 @keyframes card-spread {
@@ -71,8 +169,6 @@ body {
     100% {transform: rotate(0deg);left: 0;top: 0;}
   } 
 
-/* START LOVE PAGE */
-
 .cardstyles {
     /*  very important  */
     backface-visibility: hidden;
@@ -80,14 +176,38 @@ body {
     transition: 1s;
   }
 
+@keyframes flip {
+    0%   {}
+    25%  {transform: perspective(200px) rotateY(0deg);}
+    50%  {transform: perspective(200px) rotateY(0deg);}
+    100% {transform: perspective(200px) rotateY(0deg);}
+  } 
+
+@keyframes left {
+    0%   {}
+    100% {transform: rotate(-20deg);left: -30vw;top: 5vw;}
+  }
+
+@keyframes center {
+    0%   {}
+    100% {left: 0vw;top: 0vw;}
+  } 
+
+@keyframes right {
+    0%   {}
+    100% {transform: rotate(20deg);left: 30vw;top: 5vw;}
+  } 
+
+
+/* START LOVE PAGE */
+
 .cardwrapper-love {
     position:absolute;
-    left: 42.5vw;
-    top: 40vw;
+    top: 30vw;
     transition: 1s;
     /*  very important  */
     transform-style: preserve-3d;
-    animation-name: love-flip;
+    animation-name: flip;
     animation-duration: 3s;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -96,18 +216,16 @@ body {
     transform-origin: -24vw 0vw;
 }
 
-@keyframes love-flip {
-    0%   {}
-    25%  {transform: perspective(200px) rotateY(0deg);}
-    50%  {transform: perspective(200px) rotateY(0deg);}
-    100% {transform: perspective(200px) rotateY(0deg);}
-  } 
-
 .cardlove-back {
     position: absolute;
     height: 23vw;
     width: 15vw;
-    background-color: darkblue;
+    background-color: #222222;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
     border-radius: 10%;
 }
 
@@ -115,7 +233,7 @@ body {
     position: absolute;
     height: 23vw;
     width: 15vw;
-    background-color: darkgreen;
+    background-color: #FFF1D8;
     border-radius: 10%;
     transform: rotateY(180deg);
 }
@@ -124,7 +242,7 @@ body {
 #cardlovers-back {
     left: -30vw;
     top: 10vw;
-    animation-name: lovers;
+    animation-name: left;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -134,7 +252,7 @@ body {
 #cardhermit-back {
     left: -30vw;
     top: 35vw;
-    animation-name: hermit;
+    animation-name: center;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -144,7 +262,7 @@ body {
 #cardempress-back {
     left: -30vw;
     top: 60vw;
-    animation-name: empress;
+    animation-name: right;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -166,137 +284,178 @@ body {
     top: 60vw;
 }
 
-@keyframes lovers {
-    0%   {}
-    100% {transform: rotate(-20deg);left: -30vw;top: 5vw;}
-  }
-
-@keyframes hermit {
-    0%   {}
-    100% {left: 0vw;top: 0vw;}
-  } 
-
-@keyframes empress {
-    0%   {}
-    100% {transform: rotate(20deg);left: 30vw;top: 5vw;}
-  } 
-
   /* END LOVE PAGE */
+
+/* START SELF PAGE */
 
 .cardwrapper-self {
     position:absolute;
-    left: 42.5vw;
-    top: 40vw;
+    top: 30vw;
+    transition: 1s;
+    /*  very important  */
+    transform-style: preserve-3d;
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    transform: perspective(200px) rotateY(180deg);
+    transform-origin: -24vw 0vw;
 }
 
-.cardself {
+.cardself-back {
     position: absolute;
     height: 23vw;
     width: 15vw;
-    background-color: darkblue;
+    background-color: #222222;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
     border-radius: 10%;
 }
 
-#carddevil {
+.cardself-front {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    background-color: #FFF1D8;
+    border-radius: 10%;
+    transform: rotateY(180deg);
+}
+  
+
+#carddevil-back {
     left: -30vw;
     top: 10vw;
-    animation-name: devil;
+    animation-name: left;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-#cardhangedman {
+#cardhangedman-back {
     left: -30vw;
     top: 35vw;
-    animation-name: hangedman;
+    animation-name: center;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-#cardtemperance {
+#cardtemperance-back {
     left: -30vw;
     top: 60vw;
-    animation-name: temperance;
+    animation-name: right;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-@keyframes devil {
-    0%   {}
-    100% {transform-origin: 50% 50%;transform: rotate(-20deg);left: -30vw;top: 5vw;}
-  }
+#carddevil-front {
+    left: -30vw;
+    top: 10vw;
+}
 
-@keyframes hangedman {
-    0%   {}
-    100% {left: 0vw;top: 0vw;}
-  } 
+#cardhangedman-front {
+    left: -30vw;
+    top: 35vw;
+}
 
-@keyframes temperance {
-    0%   {}
-    100% {transform-origin: 50% 50%;transform: rotate(20deg);left: 30vw;top: 5vw;}
-  } 
+#cardtemperance-front {
+    left: -30vw;
+    top: 60vw;
+}
+
+  /* END SELF PAGE */
+
+  /* START CHANGES PAGE */
 
 .cardwrapper-change {
     position:absolute;
-    left: 42.5vw;
-    top: 40vw;
+    top: 30vw;
+    transition: 1s;
+    /*  very important  */
+    transform-style: preserve-3d;
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    transform: perspective(200px) rotateY(180deg);
+    transform-origin: -24vw 0vw;
 }
 
-.cardchange {
+.cardchange-back {
     position: absolute;
     height: 23vw;
     width: 15vw;
-    background-color: darkblue;
+    background-color: #222222;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #9C003D 25%, transparent 25%), linear-gradient(45deg, #63585E 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #FFF1D8 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
     border-radius: 10%;
 }
 
-#cardtower {
+.cardchange-front {
+    position: absolute;
+    height: 23vw;
+    width: 15vw;
+    background-color: #FFF1D8;
+    border-radius: 10%;
+    transform: rotateY(180deg);
+}
+  
+
+#cardtower-back {
     left: -30vw;
     top: 10vw;
-    animation-name: tower;
+    animation-name: left;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-#cardwheel {
+#cardwheel-back {
     left: -30vw;
     top: 35vw;
-    animation-name: wheel;
+    animation-name: center;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-#carddeath {
+#carddeath-back {
     left: -30vw;
     top: 60vw;
-    animation-name: death;
+    animation-name: right;
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: reverse;
 }
 
-@keyframes tower {
-    0%   {}
-    100% {transform-origin: 50% 50%;transform: rotate(-20deg);left: -30vw;top: 5vw;}
-  }
+#cardtower-front {
+    left: -30vw;
+    top: 10vw;
+}
 
-@keyframes wheel {
-    0%   {}
-    100% {left: 0vw;top: 0vw;}
-  } 
+#cardwheel-front {
+    left: -30vw;
+    top: 35vw;
+}
 
-@keyframes death {
-    0%   {}
-    100% {transform-origin: 50% 50%;transform: rotate(20deg);left: 30vw;top: 5vw;}
-  } 
+#carddeath-front {
+    left: -30vw;
+    top: 60vw;
+}
+
+  /* END CHANGES PAGE */

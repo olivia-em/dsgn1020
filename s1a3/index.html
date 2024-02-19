@@ -1,15 +1,49 @@
 <head>
   <title>Looking for a sign?</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-  <div class="basecardwrapper">
-    <div class="basecard"></div>
+  <div style="animation-duration: 2s" class="opener lugrasimo-regular fade-in">
+    Are you looking for some sort of sign? Do you have a question or need some
+    general advice? <br />
+    Sometimes all you need is a little push to get you thinking.
+    <br /><br />Pick a card, any card.
   </div>
 
-  <div class="cardwrapper">
-    <div class="card" id="cardlove"></div>
-    <div class="card" id="cardchange"></div>
-    <div class="card" id="cardself"></div>
+  <div class="basecardwrapper">
+    <a href="index.html"><div class="basecard"></div></a>
+
+    <div class="cardwrapper">
+      <a href="love.html"
+        ><div class="card lugrasimo-regular" id="cardlove">
+          <div
+            style="margin: 2.5vw; width: 10vw; margin-top: 8vw"
+            class="button"
+          >
+            Love
+          </div>
+        </div></a
+      >
+      <a href="bigchanges.html"
+        ><div class="card lugrasimo-regular" id="cardchange">
+          <div style="margin: 1vw; width: 13vw; margin-top: 8vw" class="button">
+            Change
+          </div>
+        </div></a
+      >
+      <a href="theself.html"
+        ><div class="card lugrasimo-regular" id="cardself">
+          <div style="margin: 3vw; width: 9vw; margin-top: 8vw" class="button">
+            Self
+          </div>
+        </div></a
+      >
+    </div>
   </div>
 </body>
