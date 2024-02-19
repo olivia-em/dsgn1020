@@ -31,9 +31,9 @@ img {
     color: #FFF1D8;
     position: absolute;
     font-size: 11pt;
-    margin: 5vw;
+    margin: auto;
     margin-top: 5vw;
-    width: 90vw;
+    width: 100%;
 }
 
 .descwrapper {
@@ -81,7 +81,7 @@ img {
 .basecardwrapper {
     top: 225px;
     position: absolute;
-    left: 46%;
+    left: 45%;
 }
 
 .basecard {
