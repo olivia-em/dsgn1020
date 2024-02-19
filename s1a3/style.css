@@ -2,17 +2,22 @@ body {
     background-color: #5B4343;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
 .lugrasimo-regular {
     font-family: "Lugrasimo", cursive;
     font-weight: 400;
     font-style: normal;
   }
 
-.lugrasimo-regular-bg {
+/* .lugrasimo-regular-bg {
     font-family: "Lugrasimo", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+  } */
 
 .opener {
     text-align: center;
@@ -22,6 +27,48 @@ body {
     margin: 5vw;
     margin-top: 10vw;
     width: 90vw;
+}
+
+.descwrapper {
+    position: absolute;
+    left: -10vw;
+
+}
+
+.desc1 {
+    text-align: left;
+    color: #FFF1D8;
+    position: absolute;
+    font-size: 1.5vw;
+    margin: 2vw;
+    margin-top: 10vw;
+    width: 60vw;
+    left: 0vw;
+    top: 30vw;
+}
+
+.desc2 {
+    text-align: left;
+    color: #FFF1D8;
+    position: absolute;
+    font-size: 1.5vw;
+    margin: 2vw;
+    margin-top: 10vw;
+    width: 60vw;
+    left: 0vw;
+    top: 55vw;
+}
+
+.desc3 {
+    text-align: left;
+    color: #FFF1D8;
+    position: absolute;
+    font-size: 1.5vw;
+    margin: 2vw;
+    margin-top: 10vw;
+    width: 60vw;
+    left: 0vw;
+    top: 80vw;
 }
 
 .basecardwrapper {
