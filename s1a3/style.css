@@ -17,15 +17,17 @@ main {
 .mysticker {
     background-color: #FFF1D8;
     border-radius: 10%;
-    max-width: 45%;
-    height: auto;
+    max-width: 25%;
     text-align: center;
-    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     align-items: center;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
 }
+
+.mysticker:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 .title {
     text-align: center;
@@ -37,7 +39,7 @@ footer {
     position: absolute;
     background-color: transparent;
     padding: 2em;
-    top: 160vh;
+    top: 100vh;
 }
 
 img {
