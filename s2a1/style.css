@@ -52,6 +52,10 @@ img {
     justify-content: center;
   }
 
+img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
 .lugrasimo-regular {
     font-family: "Lugrasimo", cursive;
     font-weight: 400;
