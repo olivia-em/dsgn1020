@@ -33,26 +33,6 @@ main {
     color: rgb(241, 215, 215);
 }
 
-.grid {
-    /* background-color:white; */
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    width: 33%;
-    height: 50%;
-    flex-direction: row;
-    align-items: center;
-}
-
-.sticker {
-    max-width: 65%;
-    height: auto;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-  }
-
 footer {
     position: absolute;
     background-color: transparent;
