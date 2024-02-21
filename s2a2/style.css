@@ -1,0 +1,114 @@
+body {
+    background-color: white;
+    min-height: 100%;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 5vh;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 16pt;
+}
+
+main {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.closetwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.closet {
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tops {
+    flex-direction: row;
+}
+
+.top1 {
+
+}
+.top2 {
+
+}
+.top3 {
+
+}
+
+#bottoms {
+    flex-direction: row;
+}
+
+.bottom1 {
+
+}
+.bottom2 {
+
+}
+.bottom3 {
+
+}
+
+#shoes {
+    flex-direction: column;
+}
+
+.shoe1 {
+
+}
+.shoe2 {
+
+}
+.shoe3 {
+
+}
+
+.outfit {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.topwrapper {
+
+}
+.bottomwrapper {
+
+}
+.shoewrapper {
+
+}
+
+.top {
+
+}
+.bottom {
+
+}
+.shoe {
+
+}
+
+/* img {
+    max-width: 65%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  } */
+
+/* img:hover {
+    transform: scale(1.2);
+  } */
