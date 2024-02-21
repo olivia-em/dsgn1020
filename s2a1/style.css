@@ -34,6 +34,7 @@ main {
     color: navy;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
+    font-size: 16pt;
 }
 
 .grid {
