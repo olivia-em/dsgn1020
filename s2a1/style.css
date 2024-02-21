@@ -19,8 +19,8 @@ main {
 .mysticker {
     background-color: #FFF1D8;
     border-radius: 10%;
-    max-width: 55%;
-    min-width: 55%;
+    max-width: 20vw;
+    height: 14.4vw;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
