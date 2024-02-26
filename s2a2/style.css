@@ -1,39 +1,44 @@
 body {
+    margin: 0;
     background-color: white;
     min-height: 100%;
-    padding: 20px;
 }
 
 .title {
     text-align: center;
     margin-top: 5vh;
-    color: black;
+    color: navy;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
     font-size: 16pt;
 }
 
 main {
-    display: block;
-    text-align: center;
-    justify-content: center;
     margin-top: 50px;
+    width: 100vw;
 }
 
 .closetwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100vw;
+    margin: 16vw; 
+    margin-top: 0vw;
+    margin-bottom: 0vw;
 }
 
 .closet {
-    width: 32%;
-    display: flex;
-    flex-wrap: wrap;
+    float: left;
+    display: grid;
+    height: 425px;
+    width: 150px;
+    background-color: lightblue;
+    text-align: center;
+    margin: 4vw; 
+    margin-top: 4vw;
+    margin-bottom: 0vw;
+    border: solid navy 10px;
 }
 
 #tops {
-    flex-direction: row;
 }
 
 .top1 {
@@ -44,10 +49,6 @@ main {
 }
 .top3 {
 
-}
-
-#bottoms {
-    flex-direction: row;
 }
 
 .bottom1 {
@@ -100,14 +101,15 @@ main {
 
 }
 
-/* img {
+img {
     max-width: 65%;
     height: auto;
     text-align: center;
     margin: auto;
     align-items: center;
     justify-content: center;
-  } */
+    padding: 10px;
+  } 
 
 /* img:hover {
     transform: scale(1.2);
