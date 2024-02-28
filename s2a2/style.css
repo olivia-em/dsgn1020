@@ -20,85 +20,213 @@ main {
 
 .closetwrapper {
     width: 100vw;
-    margin: 16vw; 
-    margin-top: 0vw;
-    margin-bottom: 0vw;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    text-align: center;
+
 }
 
 .closet {
-    float: left;
-    display: grid;
-    height: 425px;
+    /* float: left; */
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    text-align: center;
+    height: 450px;
     width: 150px;
     background-color: lightblue;
-    text-align: center;
-    margin: 4vw; 
-    margin-top: 4vw;
-    margin-bottom: 0vw;
+    margin: 25px; 
     border: solid navy 10px;
 }
 
-#tops {
+.label {
+    background-color: navy; 
+    color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 16pt; 
 }
 
+
 .top1 {
+
 
 }
 .top2 {
 
+
 }
 .top3 {
+
 
 }
 
 .bottom1 {
 
+
 }
 .bottom2 {
+
 
 }
 .bottom3 {
 
-}
 
-#shoes {
-    flex-direction: column;
 }
 
 .shoe1 {
-
+    transform: scaleX(-1)rotate(90deg);
 }
 .shoe2 {
-
+    transform: scaleX(-1)rotate(-95deg);
 }
 .shoe3 {
-
+    transform: rotate(-40deg);
 }
 
-.outfit {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-}
+.top1:hover {
+    transform: scale(1.1);
+  }
+  .top2:hover {
+    transform: scale(1.1);
+  }
+  .top3:hover {
+    transform: scale(1.1);
+  }
+  .bottom1:hover {
+    transform: scale(1.1);
+  }
+  .bottom2:hover {
+    transform: scale(1.1);
+  }
+  .bottom3:hover {
+    transform: scale(1.1);
+  }
+  .shoe1:hover {
+    transform: scale(1.1)scaleX(-1)rotate(90deg);
+  }
+  .shoe2:hover {
+    transform: scale(1.1)scaleX(-1)rotate(-95deg);
+  }
+  .shoe3:hover {
+    transform: scale(1.1)rotate(-40deg);
+  }
+
+
 .topwrapper {
+    position: relative;
+    text-align: center;
 
 }
 .bottomwrapper {
+    position: relative;
+    text-align: center;
 
 }
 .shoewrapper {
-
+    position: relative;
+    text-align: center;
 }
 
 .top {
-
+    position: absolute;
+    top: 0px;
 }
 .bottom {
-
+    position: absolute;
+    top: 140px;
 }
 .shoe {
+    position: absolute;
+    top: 300px;
+}
 
+#sweater {
+    min-width: 130%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: -20px;
+    top: -5px;
+    display: none;
+}
+
+#tank {
+    display: none;
+}
+
+#button {
+    min-width: 130%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: -20px;
+    top: -5px;
+    display: none;
+}
+
+#mini {
+    min-width: 130%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: -20px;
+    top: 160px;
+    display: none;
+}
+
+#shorts {
+    min-width: 130%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: -20px;
+    top: 160px;
+    display: none;
+}
+
+#jeans {
+    min-width: 120%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: -20px;
+    top: 130px;
+    display: none;
+}
+
+#nikes {
+    max-width: 65%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: 20px;
+    top: 333px;
+    display: none;
+}
+
+#adidas {
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: 7px;
+    top: 350px;
+    display: none;
+}
+
+#docs {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    left: -5px;
+    top: 345px;
+    display: none;
 }
 
 img {
@@ -110,7 +238,3 @@ img {
     justify-content: center;
     padding: 10px;
   } 
-
-/* img:hover {
-    transform: scale(1.2);
-  } */
