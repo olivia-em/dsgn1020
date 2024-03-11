@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: lightskyblue;
     min-height: 100%;
 }
 
@@ -38,7 +38,7 @@ main {
     text-align: center;
     height: 500px;
     width: 150px;
-    background-color: lightblue;
+    background-color: lightskyblue;
     margin: 25px; 
     border: solid navy 10px;
 }
