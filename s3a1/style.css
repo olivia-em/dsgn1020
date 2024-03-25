@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: rgb(213, 235, 250);
+    min-height: 100%;
+}
+main {
+    margin-top: 20px;
+    width: 100vw;
+}
+img {
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+    /* margin: auto; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  } 
+
+.title {
+    text-align: center;
+    /* margin-top: 5vh; */
+    color: navy;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 16pt;
+}
