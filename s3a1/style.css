@@ -1,11 +1,38 @@
 body {
-    margin: 0;
-    background-color: rgb(213, 235, 250);
+    margin-top: 50px;
+    background-color: green;
     min-height: 100%;
 }
 main {
-    margin-top: 20px;
-    width: 100vw;
+    margin-top: 50px;
+    /* padding-left: 10vw; */
+}
+.script-container {
+    width: 50%; 
+    min-width: 350px;
+    max-width: 1100px; 
+    margin: auto;
+    background-color:  rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    border: solid gray 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 14pt;
+}
+
+ul {
+    list-style-type: none;
+}
+p {
+
+}
+
+.emph {
+    color: rgb(0, 138, 7);
+}
+.comment {
+    color: rgb(109, 109, 109);
 }
 img {
     width: 100%;
@@ -19,7 +46,8 @@ img {
 .title {
     text-align: center;
     /* margin-top: 5vh; */
-    color: navy;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
     font-size: 16pt;
