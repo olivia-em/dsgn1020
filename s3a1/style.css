@@ -34,6 +34,12 @@ p {
 .comment {
     color: rgb(109, 109, 109);
 }
+.playlist-container {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 img {
     width: 100%;
     height: auto;

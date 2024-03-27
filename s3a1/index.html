@@ -9,26 +9,43 @@
   <main>
     <div class="script-container">
       <p>
-        <span class="emph">let</span> addSong<br /><span class="emph">let</span>
-        createPlaylist <br /><span class="emph">let</span> createName
-        <br /><span class="emph">let</span> createName <br /><span
-          class="comment"
-          >// x = number of people in class, excluding Grey</span
+        <span class="emph">let</span> addSong;<br /><span class="emph"
+          >let</span
         >
-        <br />x = 11
+        createPlaylist; <br /><span class="emph">let</span> createName;
+        <br /><span class="comment"
+          >// x is a variable for the number of people in class, excluding
+          Grey;</span
+        >
+        <br />x = 11;
       </p>
-      <p><span class="emph">function</span> setup()</p>
+      <p><span class="emph">function</span> setup() {</p>
       <ul>
-        <li>createPlaylist('Spotify')</li>
-        <li>g = grey()</li>
-        <li>createName(g, EditDetails, Name, typeName)</li>
+        <li>createPlaylist('Spotify');</li>
+        <li>g = grey();</li>
+        <li>n = grey(randName());</li>
+        <li>createName(g, editDetails, Name, typeName(n));</li>
       </ul>
-      <p><span class="emph">function</span> draw()</p>
+      <p>}</p>
+      <p><span class="emph">function</span> draw() {</p>
       <ul>
         <li></li>
         <li></li>
         <li></li>
       </ul>
+      <p>}</p>
+    </div>
+    <div class="playlist-container">
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/4zfrrkNeuOUVMcaci9dFtq?utm_source=generator&theme=0"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
     </div>
   </main>
 </body>
