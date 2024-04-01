@@ -9,36 +9,43 @@
   <main>
     <div class="script-container">
       <p>
-        <span class="emph">let</span> addSong;<br /><span class="emph"
-          >let</span
-        >
-        createPlaylist; <br /><span class="emph">let</span> createName;
-        <br /><span class="comment"
+        <span class="comment"
           >// x is a variable for the number of people in class, excluding
           Grey;</span
         >
-        <br />x = 11;
+        <br /><br /><span class="emph">let</span> x = 11;
       </p>
       <p><span class="emph">function</span> setup() {</p>
       <ul>
+        <li><span class="comment">// Grey gets to name the playlist!</span></li>
         <li>createPlaylist('Spotify');</li>
-        <li>g = grey();</li>
-        <li>n = grey(randName());</li>
+        <li>g === grey();</li>
+        <li>n === grey(randName());</li>
         <li>createName(g, editDetails, Name, typeName(n));</li>
       </ul>
       <p>}</p>
       <p><span class="emph">function</span> draw() {</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <span class="comment"
+            >// Every student will come up and add a song they like to the
+            spotify playlist</span
+          >
+        </li>
+        <li><span class="emph">let</span> lovedSong = favSong(x)</li>
+        <li>for (<span class="emph">let</span> x = 0; x < 12; x = x + 1)</li>
+        <li>&nbsp;&nbsp;&nbsp;<span class="emph">add</span>.lovedSong()</li>
       </ul>
       <p>}</p>
+      <p>
+        <span class="emph">play</span>(n)<br /><br />
+        <span class="comment">// Press Play!</span>
+      </p>
     </div>
     <div class="playlist-container">
       <iframe
         style="border-radius: 12px"
-        src="https://open.spotify.com/embed/playlist/4zfrrkNeuOUVMcaci9dFtq?utm_source=generator&theme=0"
+        src="https://open.spotify.com/embed/playlist/0L1E5rAqlTuRdfBpjdCpVI?utm_source=generator"
         width="100%"
         height="352"
         frameborder="0"
