@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Devilish';
+    src: url('assets/devilish/Devilish-StyleOne.otf') format('opentype'),
+         url('assets/devilish/Devilish-StyleOne.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Kindest';
+    src: url('assets/kindest-realitydemo/KindestReality_DEMO.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+/* darker pink: #A0153E */
+
+body {
+    background-color: #070F2B;
+    min-height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+}
+main {
+    width: 80vw;
+    /* margin: 10vw; */
+    height: 100%;
+    background-color: #00224D;
+    border: solid #FF204E 10px;
+    display: flex;
+    justify-content: center;
+}
+.emph {
+    color: #FF204E;
+    font-family: 'Devilish';
+    font-size: 65pt;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+    /* margin: auto; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  } 
+
+.title {
+    text-align: center;
+    color: #656afe;
+    font-family: 'Kindest';
+    font-size: 20pt;
+    position: absolute; 
+    left: 7vw;
+    top: 5vw;
+    transform: rotate(-5deg);
+    background-color: #070F2B;
+    padding: 20px;
+    border: solid #FF204E 10px;
+    border-radius: 50px;
+}
+
+.gif-cont {
+    text-align: center;
+    color: #656afe;
+    font-family: 'Kindest';
+    font-weight: 800;
+    font-size: 20pt;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    background-color: #070F2B;
+    margin-top: 20vw;
+    padding: 20px;
+    border: solid #FF204E 5px;
+}
