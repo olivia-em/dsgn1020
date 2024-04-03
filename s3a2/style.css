@@ -36,7 +36,7 @@ main {
 .emph {
     color: #FF204E;
     font-family: 'Devilish';
-    font-size: 65pt;
+    font-size: 60pt;
 }
 
 img {
@@ -52,7 +52,7 @@ img {
     text-align: center;
     color: #656afe;
     font-family: 'Kindest';
-    font-size: 20pt;
+    font-size: 16pt;
     position: absolute; 
     left: 7vw;
     top: 5vw;
@@ -63,17 +63,23 @@ img {
     border-radius: 50px;
 }
 
+.gif-wrapper {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11vw;
+}
+
 .gif-cont {
-    text-align: center;
-    color: #656afe;
-    font-family: 'Kindest';
-    font-weight: 800;
-    font-size: 20pt;
-    width: 65vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #070F2B;
-    margin-top: 20vw;
-    padding: 20px;
     border: solid #FF204E 5px;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
 }
