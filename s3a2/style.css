@@ -69,12 +69,11 @@ img {
     text-align: center;
     color: #FF204E;
     font-family: 'Kindest';
-    font-size: 14pt;
     background-color: #070F2B;
     padding: 20px;
     border: solid #656afe 4px;
     border-radius: 20px;
-    width: 20vw;
+    width: 30vw;
     margin: auto;
     margin-bottom: 50px;
     margin-top: 20px;
@@ -93,7 +92,7 @@ img {
     display: inline-flex;
     justify-content: center;
     background-color: #070F2B;
-    border: solid #FF204E 5px;
+    border: solid #656afe 5px;
     border-radius: 5px;
     margin: 10px;
 }
