@@ -57,13 +57,13 @@ img {
     font-family: 'Kindest';
     width: 40vw;
     font-size: 12pt;
-    /* transform: rotate(-5deg); */
+    transform: rotate(-3deg);
     background-color: #070F2B;
     padding: 20px;
     border: solid #FF204E 4px;
     border-radius: 30px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .button {
@@ -121,8 +121,9 @@ color: inherit;
     border-radius: 20px;
     width: 60vw;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
+    transform: rotate(3deg);
 }
 
 .tag-you {
@@ -154,11 +155,11 @@ color: inherit;
 }
 .cont1 {
     transform: rotate(-5deg);
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .cont2 {
     transform: rotate(5deg);
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
