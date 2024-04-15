@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 main {
     width: 80vw;
