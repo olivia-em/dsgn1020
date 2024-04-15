@@ -39,7 +39,7 @@ main {
 .emph {
     color: #FF204E;
     font-family: 'Devilish';
-    font-size: 10vw;
+    font-size: 40pt;
 }
 
 img {
@@ -55,30 +55,29 @@ img {
     text-align: center;
     color: #656afe;
     font-family: 'Kindest';
-    font-size: 3vw;
-    position: absolute; 
-    left: 7vw;
-    top: 5vw;
-    transform: rotate(-5deg);
+    width: 40vw;
+    font-size: 12pt;
+    /* transform: rotate(-5deg); */
     background-color: #070F2B;
     padding: 20px;
-    border: solid #FF204E 10px;
-    border-radius: 50px;
+    border: solid #FF204E 4px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .button {
     text-align: center;
-    color: #656afe;
+    color: #FF204E;
     font-family: 'Kindest';
     font-size: 14pt;
-    /* transform: rotate(5deg); */
     background-color: #070F2B;
     padding: 20px;
-    border: solid #FF204E 8px;
-    border-radius: 50px;
-    width: 160px;
+    border: solid #656afe 4px;
+    border-radius: 20px;
+    width: 20vw;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-top: 20px;
 }
 
@@ -87,8 +86,7 @@ img {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 20vw;
+    align-items: baseline;
 }
 
 .gif-cont {
@@ -97,6 +95,7 @@ img {
     justify-content: center;
     background-color: #070F2B;
     border: solid #FF204E 5px;
+    border-radius: 5px;
     margin: 10px;
 }
 
@@ -110,3 +109,56 @@ color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
+
+.text-box {
+    text-align: center;
+    color: #656afe;
+    font-family: 'Kindest';
+    font-size: 14pt;
+    background-color: #070F2B;
+    padding: 20px;
+    border: solid #FF204E 4px;
+    border-radius: 20px;
+    width: 60vw;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.tag-you {
+    color: #656afe;
+    background-color: #070F2B;
+    border: solid #FF204E 4px;
+    text-align: center;
+    font-family: 'Kindest';
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.tag-friend {
+    color: #656afe;
+    background-color: #070F2B;
+    border: solid #FF204E 4px;
+    text-align: center;
+    font-family: 'Kindest';
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.cont1 {
+    transform: rotate(-5deg);
+    margin-right: 10px;
+}
+.cont2 {
+    transform: rotate(5deg);
+    margin-left: 10px;
+}
+
+
