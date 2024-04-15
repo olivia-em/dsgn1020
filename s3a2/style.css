@@ -19,7 +19,7 @@
 body {
     background-color: #070F2B;
     background-image: url(assets/background.png);
-    background-size: 50%;
+    background-size: 35%;
     width: 100vw;
     height: 97vh;
     display: flex;
