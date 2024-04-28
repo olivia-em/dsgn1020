@@ -5,13 +5,38 @@
   <script src="rorshach-js/sketch.js" type="text/javascript"></script>
 </head>
 <body>
-  <input type="checkbox" id="toggle" class="visually-hidden" />
+  <!-- <input type="checkbox" id="task" class="visually-hidden" /> -->
+  <label id="task-l" for="toggle">
+    <div id="ii">
+      <div id="i-wrapper">
+        <div id="circle"></div>
+      </div>
+    </div>
+  </label>
+  <input
+    type="checkbox"
+    id="toggle"
+    class="visually-hidden"
+    onclick="chBackcolor();"
+  />
   <div id="pop-up">
-    <label for="toggle">
+    <h1>Create your own Rorshach Test!</h1>
+    <p><i> Hot Keys: </i><br /><br /></p>
+    <ol>
+      <li>No Fill</li>
+      <li>Fill</li>
+      <li>Freeze / Unfreeze</li>
+      <li>Save Image</li>
+      <li>Clear Canvas</li>
+    </ol>
+    <p style="margin-top: 4%">
+      <i>When you're finished: </i><br /><br />Freeze your picture, name it and
+      click out of the input field, then save!<br /><br />
+    </p>
+    <label id="toggle-l" for="toggle">
       <div id="xx">
         <div id="x-wrapper">
-          <div id="line1"></div>
-          <div id="line2"></div>
+          <p>Get Started!</p>
         </div>
       </div>
     </label>

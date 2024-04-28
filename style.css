@@ -1,0 +1,55 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7E6E83;
+}
+
+.bg {
+    height: 100vh;
+    width: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    img.bg-img {
+        width: auto;
+        height: 175%;
+    }
+}
+
+.taskbar {
+    width: 70vw;
+    height: 50px;
+    background-color: #7E6E83;
+    position: fixed;
+    top: 85%;
+    border-radius: 10vw;
+    box-shadow: 0px 0px 20px 5px #DD2C00;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+    margin: auto;
+}
+
+.icon:hover {
+    box-shadow: 0px 0px 20px 5px #DD2C00;
+}
+

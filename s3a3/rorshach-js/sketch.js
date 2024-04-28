@@ -16,7 +16,7 @@
 var formResolution = 15;
 var stepSize = 2;
 var distortionFactor = 1;
-var initRadius = 50;
+var initRadius = 30;
 var centerX;
 var centerY;
 var x = [];
@@ -24,7 +24,7 @@ var y = [];
 
 let input;
 
-var filled = false;
+var filled = true;
 var freeze = false;
 
 function setup() {
@@ -43,7 +43,10 @@ function setup() {
   strokeWeight(0.75);
   
   input = createInput('');
-  input.position(0, 0);
+  input.attribute('placeholder', 'What do you see?')
+  input.size(135)
+  input.position(windowWidth*.44, 20);
+  input.style('font-family', 'Courier New', 'background-color', '#000000');
   
   background(255);
 }
@@ -98,6 +101,8 @@ function draw() {
 
 function mousePressed() {
   // init shape on mouse position
+  // GO.clicked();
+
   centerX = mouseX;
   centerY = mouseY;
   var angle = radians(360 / formResolution);
@@ -121,4 +126,8 @@ function keyReleased() {
   } else {
     loop();
   }
+}
+
+function chBackcolor() {
+  background(255);
 }

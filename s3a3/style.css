@@ -10,16 +10,58 @@ body {
     justify-content: center;
     align-items: center;
 }
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+canvas {
+    border: solid black 10px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+  }
+
+  p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 4%;
+  }
+
+  h1 {
+    font-weight: 1000;
+    font-size: x-large;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 4%;
+  }
+
+  ol {
+    width: 30%;
+    margin: auto;
+  }
 
 #pop-up {
     position: absolute;
     width: 80vw;
     height: 80vh;
+    margin: auto;
     background-color: #ffffff;
     border: solid black 10px;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
 }
 
-label {
+label#toggle-l {
     position: relative;
     top: 0;
     left: 0;
@@ -27,31 +69,35 @@ label {
     height: 40px;
 }
 
-/* .control-me::after {
-    content: "😃";
-    font-size: 100px;
-} */
+#toggle:checked ~ div#pop-up {
+    /* visibility: visible; */
+    display: initial
+}
 
 #toggle:checked ~ div#pop-up {
+    /* visibility: hidden; */
     display: none;
 }
 
 .visually-hidden {
     position: absolute;
-    left: -100vw;
-}
-
-#xx {
-    position: relative;
+    visibility: hidden;
     top: 0;
     left: 0;
+}
+
+#ii {
+    position: absolute;
+    top: 5;
+    left: 5;
     width: 40px;
     height: 40px;
     background-color: black;
     border: solid gray 5px;
+    border-radius: 10px;
 }
 
-#xx:hover {
+#ii:hover {
     box-shadow: 0px 0px 20px 5px gray;
 }
 
@@ -59,36 +105,49 @@ label {
     display: none;
 } */
 
-#x-wrapper {
-    position: relative;
-    top: 12;
-    left: 0;
-}
-
-#line1 {
-    position: relative;
-    top: 5;
-    left: 0;
-    width: 40px;
-    height: 5px;
-    background-color: white;
-    transform: rotate(-45deg);
-}
-
-#line2 {
+#i-wrapper {
     position: relative;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 5px;
+}
+
+#circle {
+    position: relative;
+    top: 5;
+    left: 5;
+    width: 30px;
+    height: 30px;
     background-color: white;
-    transform: rotate(45deg);
+    border-radius: 50%;
+}
+
+#xx {
+    /* position: relative;
+    top: 0;
+    left: 500; */
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    border: solid gray 5px;
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    border-radius: 10px;
+}
+
+#xx:hover {
+    box-shadow: 0px 0px 20px 5px gray;
+}
+
+#xx p {
+    color: white;
+    width: 100%;
+    margin: auto;
 }
 
 
-canvas {
-    border: solid black 10px;
-  }
+
+
 
 
 
