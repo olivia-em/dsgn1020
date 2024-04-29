@@ -59,7 +59,12 @@ canvas {
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
+    overflow: auto;
 }
+
+#pop-up::-webkit-scrollbar {
+    display: none;
+  }
 
 label#toggle-l {
     position: relative;
@@ -122,16 +127,15 @@ label#toggle-l {
 }
 
 #xx {
-    /* position: relative;
-    top: 0;
-    left: 500; */
     width: 200px;
     height: 40px;
     background-color: black;
     border: solid gray 5px;
     margin: auto;
     margin-top: 30px;
+    display: flex;
     align-content: center;
+    justify-content: center;
     border-radius: 10px;
 }
 
@@ -143,6 +147,7 @@ label#toggle-l {
     color: white;
     width: 100%;
     margin: auto;
+
 }
 
 
