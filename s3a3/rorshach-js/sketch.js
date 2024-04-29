@@ -45,7 +45,7 @@ function setup() {
   input = createInput('');
   input.attribute('placeholder', 'What do you see?')
   input.size(135)
-  input.position(windowWidth*.44, 20);
+  input.position(windowWidth/2.23, 20);
   input.style('font-family', 'Courier New', 'background-color', '#000000');
   
   background(255);
