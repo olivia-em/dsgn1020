@@ -13,7 +13,8 @@ body {
 
 .bg {
     height: 100vh;
-    width: auto;
+    width: 100vw;
+    position: fixed;
 }
 
 img {
@@ -27,7 +28,7 @@ img {
         height: 175%;
     }
 }
-
+ 
 .taskbar {
     width: 70vw;
     height: 50px;
@@ -51,5 +52,72 @@ img {
 
 .icon:hover {
     box-shadow: 0px 0px 20px 5px #DD2C00;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: black;
+    background-color: #DD2C00;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.file-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: auto;
+    /* background-color: #7E6E83; */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.file-icon:hover ~ p {
+    box-shadow: 0px 0px 20px 5px #DD2C00;
+}
+
+.file-icon {
+    width: 50px;
+    height: auto;
+    margin: auto;
+}
+
+#s1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: -20vh;
+    width: 33vw;
+}
+
+/* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+#s2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 33vw;
+    top: 0;
+}
+
+#s3 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 33vw;
+    top: 10vh;
+
 }
 
