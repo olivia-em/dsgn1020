@@ -15,6 +15,7 @@ body {
     height: 100vh;
     width: 100vw;
     position: fixed;
+    z-index: -5;
 }
 
 img {
@@ -37,11 +38,13 @@ img {
     top: 85%;
     border-radius: 10vw;
     box-shadow: 0px 0px 20px 5px black;
+    border: solid black 5px;
     display: grid;
     justify-content: center;
     text-align: center;
     align-items: center;
     grid-template-columns: repeat(5, 20%);
+    padding: 10px;
 }
 /* #6C8AB3 */
 .icon {
@@ -51,7 +54,7 @@ img {
 }
 
 .icon:hover {
-    box-shadow: 0px 0px 20px 5px #FF5733;
+    scale: 1.25;
 }
 
 p {
@@ -61,6 +64,26 @@ p {
     background-color: #FF5733;
     border-radius: 5px;
     /* margin-top: 2px; */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: black;
+    background-color: #FF5733;
+    text-align: center;
+    /* border-radius: 5px; */
+    font-size: 18pt;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: black;
+    background-color: #FF5733;
+    text-align: center;
+    /* border-radius: 5px; */
+    font-size: 12pt;
 }
 
 .file-wrapper {
@@ -76,10 +99,12 @@ p {
 
 .file-wrapper:hover > p {
     box-shadow: 0px 0px 20px 5px #FF5733;
+    scale: 1.25;
 }
 
 p:hover {
     box-shadow: 0px 0px 20px 5px #FF5733;
+    scale: 1.25;
 }
 
 .file-icon {
@@ -124,3 +149,168 @@ p:hover {
 
 }
 
+#container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit;
+}
+
+/* #king {
+    position: absolute;
+    left: 40px;
+} */
+
+
+.pop-up {
+    position: absolute;
+    top: 5vh;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    background-color: #6C8AB3;
+    border: solid black 5px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    overflow: auto;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .pop-up {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .pop-up {
+        height: 50vh;
+    }
+}
+
+.pop-up::-webkit-scrollbar {
+    display: none;
+  }
+
+.visually-hidden {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+#s1a1-check:checked ~ div#s1a1 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s1a1-check:checked ~ div#s1a1 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s1a2-check:checked ~ div#s1a2 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s1a2-check:checked ~ div#s1a2 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s1a3-check:checked ~ div#s1a3 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s1a3-check:checked ~ div#s1a3 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s2a1-check:checked ~ div#s2a1 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s2a1-check:checked ~ div#s2a1 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s2a2-check:checked ~ div#s2a2 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s2a2-check:checked ~ div#s2a2 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s2a3-check:checked ~ div#s2a3 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s2a3-check:checked ~ div#s2a3 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s3a1-check:checked ~ div#s3a1 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s3a1-check:checked ~ div#s3a1 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s3a2-check:checked ~ div#s3a2 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s3a2-check:checked ~ div#s3a2 {
+    /* visibility: hidden; */
+    display: visible;
+}
+
+#s3a3-check:checked ~ div#s3a3 {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#s3a3-check:checked ~ div#s3a3 {
+    /* visibility: hidden; */
+    display: visible;
+}
