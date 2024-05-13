@@ -11,6 +11,19 @@ body {
     background-color: #FF5733;
 }
 
+#darkmode:checked ~ * {
+    filter: invert(1);
+}
+
+.title {
+    position: fixed;
+    text-wrap: nowrap;
+    overflow: hidden;
+    top: -15;
+    left: 0;
+}
+
+
 .bg {
     height: 100vh;
     width: 100vw;
@@ -23,10 +36,10 @@ img {
     height: auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     img.bg-img {
         width: auto;
-        height: 175%;
+        height: 150%;
     }
 }
  
@@ -35,7 +48,7 @@ img {
     height: 50px;
     background-color: #6C8AB3;
     position: fixed;
-    top: 85%;
+    top: 82%;
     border-radius: 10vw;
     box-shadow: 0px 0px 20px 5px black;
     border: solid black 5px;
@@ -63,7 +76,7 @@ p {
     color: black;
     background-color: #FF5733;
     border-radius: 5px;
-    /* margin-top: 2px; */
+    padding: 1px;
 }
 
 h1 {
@@ -84,6 +97,17 @@ h2 {
     text-align: center;
     /* border-radius: 5px; */
     font-size: 12pt;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: black;
+    /* background-color: #FF5733; */
+    text-align: left;
+    /* border-radius: 5px; */
+    padding: 20px;
+    font-size: 10pt;
 }
 
 .file-wrapper {
@@ -120,7 +144,7 @@ p:hover {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    top: 5vh;
+    top: 7vh;
     width: 33vw;
 }
 
@@ -145,7 +169,7 @@ p:hover {
     flex-direction: row;
     justify-content: space-evenly;
     width: 33vw;
-    top: 6vh;
+    top: 8vh;
 
 }
 
@@ -312,5 +336,67 @@ a {
 
 #s3a3-check:checked ~ div#s3a3 {
     /* visibility: hidden; */
+   
     display: visible;
+}
+
+#notes-check:checked ~ div#notes {
+    /* visibility: visible; */
+    display: initial;
+}
+
+#notes-check:checked ~ div#notes {
+    /* visibility: hidden; */
+   
+    display: visible;
+}
+
+.olivia {
+    width: 75px;
+    height: auto;
+    margin: auto;
+}
+
+#apple {
+    position: absolute;
+    top: 100;
+    left: 400;
+    transform: rotate(-30deg);
+}
+
+#hat {
+    position: absolute;
+    top: 30;
+    left: 100;
+}
+
+#leather {
+    position: absolute;
+    top: 300;
+    left: 500;
+}
+
+#jorts {
+    position: absolute;
+    top: 500;
+    left: 100;
+}
+
+#glasses {
+    position: absolute;
+    top: 250;
+    left: 900;
+}
+
+#sweater {
+    position: absolute;
+    top: 150;
+    left: 1200;
+    transform: rotate(-40deg);
+}
+
+#skirt{
+    position: absolute;
+    top: 100;
+    left: 1300;
 }
